@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  background-color: black;
+  position: absolute;
+}
+
+.header {
+  width: 100%;
+  background-color: white;
+  max-height: 100px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header a {
+  color: black;
+}
+
+.logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo a img {
+  max-height: 100px;
+  max-width: 100px;
+  padding: 0 10px;
+}
+
+.logo a h1 {
+  font-weight: 700;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.menu li {
+  font-size: 27px;
+  padding: 0 25px;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+  .header {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 806px) {
+  .header {
+    max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px 0;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+.text-top {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-top p {
+  font-size: 33px;
+  line-height: 40px;
+}
+
+.image-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.image-top img {
+  max-width: 100%;
+  max-height: 270px;
+}
+
+.top {
+  margin: 0 0 100px 0;
+}
+
+.text-bot {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-bot p {
+  font-size: 27px;
+  line-height: 40px;
+}
+
+.image-bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.image-bot img {
+  max-width: 100%;
+  max-height: 270px;
+}
+
+.text-center {
+  color: white;
+  font-size: 3rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.row {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  border-radius: 20px;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 0 15px 0;
+}
+
+.footer p {
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.content {
+  color: white;
+}
+
+.title {
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
